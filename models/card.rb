@@ -15,11 +15,11 @@ class Card
     end
   end
 
-  def win_rate(type)
+  def win_rate(type, card_count)
     if type == :overall
-      return @overall_comparison[:w] * 100 / 29
+      return @overall_comparison[:w] * 100 / (card_count-1)
     elsif type == :best
-      return @best_comparison[:w] * 100 / 29
+      return @best_comparison[:w] * 100 / (card_count-1)
     end
     nil
   end
@@ -37,8 +37,8 @@ class Card
     indices.find_index(indices.min)
   end
 
-  def compare_overall_to(card)
-    result = 0; (0..4).each { |index| result += compare_value(card, index) }
+  def compare_overall_to(card, categories_count)
+    result = 0; (0..categories_count-1).each { |index| result += compare_value(card, index) }
 
     if result > 0
       overall_comparison[:w] += 1
@@ -46,7 +46,7 @@ class Card
     elsif result < 0
       overall_comparison[:l] += 1
       card.overall_comparison[:w] += 1
-    else
+    elsif result == 0
       overall_comparison[:e] += 1
       card.overall_comparison[:e] += 1
     end
@@ -59,26 +59,12 @@ class Card
       best_comparison[:w] += 1
     elsif result < 0
       best_comparison[:l] += 1
-    else
+    elsif result == 0
       best_comparison[:e] += 1
     end
   end
 
   def compare_value(card, index)
     self.values[index] > card.values[index] ? 1 : -1
-  end
-
-  def to_s(categories)
-    "#{name}:#{tabs}(#{values.join(', ')}) \tWin Rate overall: #{win_rate(:overall)}% (W/L/E: #{overall_comparison[:w]}, #{overall_comparison[:l]}, #{overall_comparison[:e]})  \tWin Rate best: #{win_rate(:best)}% (W/L/E: #{best_comparison[:w]}, #{best_comparison[:l]}, #{best_comparison[:e]}) [#{categories[best_value_index(categories)].name}]"
-  end
-
-  def tabs
-    if name.length < 7
-      "\t\t\t"
-    elsif name.length > 14
-      "\t"
-    else
-      "\t\t"
-    end
   end
 end

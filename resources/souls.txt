@@ -1,31 +1,31 @@
 Vitality,Strength,Dexterity,Intelligence,Faith
-Gwyndolin,3,1,4,8,9
-Lost Sinner,3,4,6,3,2
-Ivory King,8,5,7,3,5
-Sulyvahn,4,5,6,9,6
-Gael,9,6,6,5,6
-Nashandra,6,3,4,7,7
-Aldrich,4,3,5,6,9
-Gundyr,4,6,6,5,3
-Manus,8,6,6,4,8
-Gwyn,6,5,5,3,10
-Yhorm,10,9,3,4,2
-Pursuer,2,3,3,3,2
-Iron King,5,10,2,4,5
-Smelter Demon,5,6,3,1,3
-Sif,5,3,8,4,5
-Vendrick,9,8,2,1,6
-Seath,7,7,2,10,2
-Ornstein,2,4,7,4,8
-Raime,7,6,6,4,5
-Nameless King,6,5,5,5,9
-Demon Prince,8,7,6,6,2
-Artorias,5,5,7,5,6
-Nito,6,4,3,7,7
-Taurus,3,6,2,2,2
-Twins,6,5,6,6,6
-Watchers,1,3,6,2,4
-Dancer,4,3,10,3,6
-Smough,3,8,2,3,4
-Soul of Cinder,8,6,6,6,6
-Velstadt,5,7,4,4,8
+Gwyndolin,3200,10,40,8,9
+Lost Sinner,3300,40,60,3,2
+Ivory King,9500,55,70,3,5
+Sulyvahn,4500,50,60,9,6
+Gael,13000,60,60,5,6
+Nashandra,7400,25,40,7,7
+Aldrich,4200,30,50,7,9
+Gundyr,4400,65,60,5,3
+Manus,9600,65,55,4,8
+Gwyn,6500,50,50,3,10
+Yhorm,25000,90,30,4,2
+Pursuer,2600,40,35,3,2
+Iron King,5100,100,20,4,5
+Smelter Demon,5000,65,30,1,3
+Sif,5000,30,80,4,5
+Vendrick,9700,80,15,1,6
+Seath,8000,65,20,10,2
+Ornstein,2400,40,75,4,8
+Raime,8500,65,65,4,5
+Nameless King,6300,50,50,5,9
+Demon Prince,9000,70,55,6,2
+Artorias,5700,55,70,5,6
+Nito,6400,40,30,7,7
+Taurus,1700,60,20,2,2
+Twins,7200,65,55,5,6
+Watchers,1300,25,65,2,4
+Dancer,4500,30,100,3,6
+Smough,3900,80,15,3,4
+Soul Of Cinder,9000,60,60,6,6
+Velstadt,5300,70,45,4,8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

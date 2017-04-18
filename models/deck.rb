@@ -34,9 +34,9 @@ class Deck
 
   def cards_by(sort_type)
     if sort_type == :overall
-      return @cards.sort{ |c1, c2| c2.win_rate(:overall) <=> c1.win_rate(:overall) }
+      return @cards.sort{ |c1, c2| c2.win_rate(:overall, @cards.length) <=> c1.win_rate(:overall, @cards.length) }
     elsif sort_type == :best
-      return @cards.sort{ |c1, c2| c2.win_rate(:best) <=> c1.win_rate(:best) }
+      return @cards.sort{ |c1, c2| c2.win_rate(:best, @cards.length) <=> c1.win_rate(:best, @cards.length) }
     end
     @cards
   end
@@ -44,7 +44,13 @@ class Deck
   private
 
   def calculate_category_ranges
+    @cards.each do |card|
+      puts card.name + ': ' + card.values.join(', ')
+    end
+
     @categories.each_with_index do |category, i|
+      puts category.name
+      puts '-------------------------'
       @cards.each do |card|
         category.min = card.values[i] if category.min > card.values[i]
         category.max = card.values[i] if category.max < card.values[i]
@@ -72,7 +78,7 @@ class Deck
     (0..@cards.length-1).each do |i|
       (i..@cards.length-1).each do |j|
         next if i == j
-        @cards[i].compare_overall_to @cards[j]
+        @cards[i].compare_overall_to @cards[j], @categories.length
       end
     end
 
