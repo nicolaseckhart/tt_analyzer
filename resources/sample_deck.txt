@@ -1,0 +1,117 @@
+Height,Intelligence,Strength,Speed,Flexibility,Battle Skills
+Black Adam,183,7,48,17,18,80
+Donna Troy,175,5,35,9,16,74
+Power Girl,170,3,41,10,15,80
+Wonder Girl,166,3,32,12,19,73
+Gog,191,5,36,10,16,84
+Nightwing,177,7,26,6,17,80
+Catwoman,170,4,17,6,17,72
+Red Tornado,186,5,35,12,22,66
+The Riddler,186,5,18,4,13,64
+Cyborg,196,6,36,4,13,65
+Steel,201,6,38,7,12,80
+Martian Manhunter,201,6,46,18,21,85
+Superboy,170,3,40,9,14,78
+Hippolyta,175,6,24,6,14,70
+Hawkman,168,4,30,8,17,77
+Plastic Man,186,4,21,4,22,65
+Artemis,183,5,27,5,15,75
+Superman,191,7,50,19,21,87
+Cheetah,175,4,22,17,17,85
+Two Face,183,4,20,4,12,61
+Poison Ivy,167,5,13,4,12,65
+General Zod,191,5,38,4,13,71
+Hawkgirl,167,3,27,7,14,71
+Ares,208,7,42,9,19,83
+Lex Luthor,188,10,20,4,12,63
+Bane,203,6,38,6,14,85
+Beast Boy,172,3,27,4,23,66
+Wonder Woman,183,7,41,18,19,78
+Doomsday,213,2,50,14,10,85
+Mr. Freeze,183,6,26,5,10,70
+Mysterio,178,3,23,3,14,70
+Invisible Woman,165,3,23,2,12,70
+Dr Doom,186,8,48,4,13,70
+Dr Strange,184,5,35,4,14,85
+Elektra,173,4,15,6,16,80
+Hawkeye,188,3,26,4,16,80
+Venom,188,3,38,10,20,64
+Thor,195,4,49,9,19,85
+Iron Man,183,6,48,2,12,85
+Captain America,186,4,29,6,16,86
+Magneto,185,8,46,2,12,81
+Black Panther,180,7,29,7,17,79
+Beast,177,5,35,10,20,72
+The Human Torch,175,4,26,5,14,71
+Spiderman,175,7,36,11,21,66
+Iceman,170,3,28,4,12,70
+Kingpin,198,7,30,4,13,75
+Silver Surfer,190,4,46,13,18,72
+Dr Octopus,173,7,23,2,12,65
+Nick Fury,183,3,27,4,12,86
+Storm,178,4,27,12,14,69
+Green Goblin,178,6,35,10,18,55
+Professor X,180,7,24,1,12,64
+Juggernaut,205,3,48,2,10,63
+Black Widdow,168,4,26,4,14,81
+Blade,185,3,29,5,14,85
+Ghost Rider,181,3,37,8,15,66
+Supergirl,165,3,45,17,18,85
+Dr Sivana,168,7,10,3,10,55
+Ocean Master,181,4,22,4,12,68
+Green Lantern Kyle,181,4,26,12,13,80
+Fatality,175,3,20,5,15,81
+Parallax,183,4,30,11,13,80
+Zatanna,171,5,14,4,12,81
+Robin,165,6,24,5,16,67
+Black Manta,193,3,21,4,12,68
+Starfire,193,4,28,10,15,68
+Green Lantern John,186,4,26,10,12,80
+Raven,165,5,14,4,12,65
+Scarecrow,198,6,15,4,12,69
+Captain Cold,188,3,23,4,12,63
+The Penguin,158,8,18,3,10,62
+Aquaman,186,5,35,8,14,76
+The Flash,183,4,27,20,25,79
+Ra's Al Ghul,188,7,24,4,14,80
+Firestorm,188,4,28,10,14,70
+Mary Marvel,168,6,42,16,16,82
+Aquagirl,165,3,21,6,20,65
+Shazam!,191,7,48,17,18,71
+The Joker,196,5,22,4,12,70
+Harley Quinn,171,8,15,4,17,71
+Professor Zoom,181,6,24,19,25,79
+Black Canary,165,3,15,4,17,81
+Green Arrow,180,3,25,4,16,80
+Batgirl,165,4,29,7,19,90
+Dr Fate,183,8,25,4,14,92
+Batman,188,8,31,7,17,92
+Psylocke,178,3,29,6,18,85
+Sabretooth,195,4,34,7,19,74
+Bishop,195,3.5,29,6.5,16,78
+Black Cat,175,3,29,7,20,71
+War Machine,180,4,30,5,20,85
+Quicksilver,180,3,35,14,21,71
+Wolverine,158,5,35,6,20,95
+Blob,240,3,41,1,11,60
+Galactus,862,10,50,20,30,55
+Soldier X,200,4,35,6,19,93
+She Hulk,198,4,48,3,17,72
+Archangel,180,4,28,5,15,77
+Jean Grey,165,5,26,4,16,75
+Mystique,175,6,25,6,18,76
+Warbird,177,4.5,36,14,27,75
+Punisher,180,4,30,3,17,92
+Captain Marvel,185,3,35,20,21,62
+Toad,170,2.5,35,9,20,82
+Emma Frost,175,4,41,6,15,73
+Rogue,170,4,40,11,23,72
+Colossus,222,5,42,4,14,69
+Cyclops,183,4.5,30,6,16,80
+Gambit,178,4,27,6,18,70
+The Incredible Hulk,210,2,50,6,16,73
+Shadowcat,165,6,26,6,29,86
+Abomination,200,3,49,9,20,61
+Agent X,180,4,37,7,20,94
+Daredevil,180,5,23,3,19,88
+Sentinels,190,2,37,12,20,81

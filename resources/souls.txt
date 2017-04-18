@@ -1,0 +1,31 @@
+Vitality,Strength,Dexterity,Intelligence,Faith
+Gwyndolin,3,1,4,8,9
+Lost Sinner,3,4,6,3,2
+Ivory King,8,5,7,3,5
+Sulyvahn,4,5,6,9,6
+Gael,9,6,6,5,6
+Nashandra,6,3,4,7,7
+Aldrich,4,3,5,6,9
+Gundyr,4,6,6,5,3
+Manus,8,6,6,4,8
+Gwyn,6,5,5,3,10
+Yhorm,10,9,3,4,2
+Pursuer,2,3,3,3,2
+Iron King,5,10,2,4,5
+Smelter Demon,5,6,3,1,3
+Sif,5,3,8,4,5
+Vendrick,9,8,2,1,6
+Seath,7,7,2,10,2
+Ornstein,2,4,7,4,8
+Raime,7,6,6,4,5
+Nameless King,6,5,5,5,9
+Demon Prince,8,7,6,6,2
+Artorias,5,5,7,5,6
+Nito,6,4,3,7,7
+Taurus,3,6,2,2,2
+Twins,6,5,6,6,6
+Watchers,1,3,6,2,4
+Dancer,4,3,10,3,6
+Smough,3,8,2,3,4
+Soul of Cinder,8,6,6,6,6
+Velstadt,5,7,4,4,8

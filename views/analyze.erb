@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+<style>
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+</style>
+
+<h3>Category Analysis</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Lowest value in deck</th>
+      <th>Middle value (calculated)</th>
+      <th>Highest value in deck</th>
+      <th>Average value in deck</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @deck.categories.each do |category| %>
+      <tr>
+        <td><b><%= category.name %></b></td>
+        <td><%= category.min %></td>
+        <td><%= category.min + ((category.max - category.min) / 2) %></td>
+        <td><%= category.max %></td>
+        <td><%= category.avg %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Card Analysis (overall)</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Values</th>
+          <th>Win Rate overall</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @deck.cards_by(:overall).each do |card| %>
+          <tr>
+            <td><b><%= card.name %></b></td>
+            <td><%= card.values.join(', ') %></td>
+            <td><b><%= "#{card.win_rate(:overall)}%" %></b> <%= "(W/L/E: #{card.overall_comparison[:w]}/#{card.overall_comparison[:l]}/#{card.overall_comparison[:e]})" %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Card Analysis (best)</h3>
+    <table class="table table-striped">
+      <thead>
+        <th>Name</th>
+        <th>Values</th>
+        <th>Win Rate best attribute</th>
+      </thead>
+      <tbody>
+      <% @deck.cards_by(:best).each do |card| %>
+          <tr>
+            <td><b><%= card.name %></b></td>
+            <td><%= card.values.join(', ') %></td>
+            <td><b><%= "#{card.win_rate(:best)}%" %></b> <%= "(W/L/E: #{card.best_comparison[:w]}/#{card.best_comparison[:l]}/#{card.best_comparison[:e]})"%> <b><%= "[#{@deck.categories[card.best_value_index(@deck.categories)].name}]" %></b></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
