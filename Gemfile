@@ -1,5 +1,5 @@
 source 'https://rubygems.org' do
-  ruby '2.3.0'
+  ruby '1.9.3'
 
   gem 'sinatra'
 end
